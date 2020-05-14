@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>giai pt bậc 2</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("nhập a vào"));
+    let b = parseInt(prompt("nhâp b vào"));
+    let c = parseInt(prompt("nhập c vào"))
+    let x;
+    let x1;
+    let x2;
+    let delta
+    delta = (b*b) - (4*a*c);
+    if(delta == 0){
+        x = -b/2*a;
+        document.write(x + "là nghiệm của pt")
+    }else if(delta < 0){
+        document.write("pt vô nghiệm")
+    }else (delta>0)
+    {
+        x1 = (-b + Math.sqrt(delta)) / (2 * a);
+        document.write("x1 =" + x1)
+        x2 = (-b - Math.sqrt(delta)) / (2 * a);
+        document.write("x2 =" + x2)
+    }
+
+</script>
+</body>
+</html>

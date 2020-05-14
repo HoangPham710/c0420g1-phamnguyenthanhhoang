@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xep hang hoc luc</title>
+</head>
+<body>
+<script>
+    let name = prompt("Nhập tên học sinh")
+    let a = parseInt(prompt("nhập số điểm bài kiểm tra"));
+    let b = parseInt(prompt("nhập số điểm giữa kì"));
+    let c = parseInt(prompt("nhập số điểm cuối kì"));
+    let d;
+    d = (a + (b*2) + (c*3))/3;
+    if(d>8){
+        document.write(name + ":học lực giỏi");
+    }else if (d<8){
+        document.write(name+ ":học lực khá");
+    }else if (d<=5) {
+        document.write(name +"học lực trung bình");
+    }else{
+        document.write(name +"học lực kém")
+    }
+</script>
+</body>
+</html>
