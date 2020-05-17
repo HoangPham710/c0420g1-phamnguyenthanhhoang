@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>yeu cau 3</title>
+</head>
+<body>
+<script>
+let name ;
+let cmnd ;
+let birthday;
+let email;
+let address;
+let typeService;
+let typeroom;
+let typecustomer;
+let discount;
+let quantityIncluded;
+let renDays;
+let totalPay;
+let check = false;
+name=prompt("Input name :");
+cmnd=prompt("Input cmnd:");
+birthday= prompt("Input birthday:");
+do {
+    let countAt = 0;
+    let countDoc=0;
+    email=prompt("Input email:");
+    for (let i=0;i<email.charAt(i);i++){
+        if(email.charAt(i)==="@"){
+            countAt++;
+            for (let j=i+1;j<=email.length;j++){
+                if (email.charAt(j)==="."){
+                    countDoc++;
+                }
+            }
+
+        }
+    }
+    if(countAt!=1||countDoc<1){
+        alert("email bạn nhập không đúng")
+    }else{
+        check=true;
+    }
+}while(!check)
+address=prompt("Input address:");
+typeService=prompt("Input typeService");
+typeroom=prompt("input typeroom:");
+typecustomer=prompt("Input typecustomer:");
+discount=prompt("Input discount:");
+quantityIncluded=prompt("input quantityIncluded: ");
+renDays=prompt("Input rendays:");
+
+</script>
+
+</body>
+</html>

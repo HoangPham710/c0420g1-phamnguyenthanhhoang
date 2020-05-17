@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tong 20 so dau tien day fibo</title>
+</head>
+<body>
+<script>
+    a1 = 0;
+    a2 = 1;
+    let totalFibonacci = "0+1";
+    for (let i = 3; i <= 20; i++) {
+        temp = a2;
+        a2 = a1 + a2;
+        a1 = temp;
+        totalFibonacci += "+" + a2;
+    }
+    document.write("Tong 20 so dau tien la: " + "<br>" + eval(totalFibonacci));
+
+</script>
+</body>
+</html>

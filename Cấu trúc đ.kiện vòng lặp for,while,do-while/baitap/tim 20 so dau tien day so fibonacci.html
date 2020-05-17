@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hien thi 20 so trong day fibonacci</title>
+</head>
+<body>
+<script>
+let a1 = 0;
+let a2 = 1;
+let temp;
+let result = "0 1 ";
+for (let i = 3; i <= 20; i++) {
+temp = a2;
+a2 = a1 + a2;
+a1 = temp;
+result += a2 + " ";
+}
+document.write("Day so 20 so fibonacci: " + "<br>" + result);
+/*const NUM_OF_FABO = 20;
+let count = 0;
+let prevNum1 = 0;
+let prevNum2 = 1;
+let curNum; // first case
+let txtPr = "";
+findFabonacci();
+function findFabonacci()  {
+    while(true) {
+        count ++
+        if (count > NUM_OF_FABO) {
+            break;
+        }
+        curNum = prevNum1 + prevNum2;
+        txtPr += curNum + "-";
+        prevNum2 = prevNum1;
+        prevNum1 = curNum;
+    }
+    document.write(txtPr);
+}*/
+</script>
+</body>
+</html>

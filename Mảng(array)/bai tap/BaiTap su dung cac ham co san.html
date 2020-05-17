@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap su dung cac ham co san</title>
+</head>
+<body>
+//bai 1
+<script>
+array = [1,2,3,4,5,6,7,8,9,10];
+document.write(array.join(" ") + "<br>");
+</script>
+//bai 2
+let result = [input[0]];
+for (let i = 1; i < input.length; i++) {
+if (input[i-1] % 2 == 0 && input[i] % 2 == 0) {
+result.push("-", input[i]);
+} else {
+result.push(input[i]);
+}
+}
+document.write(result.join("") + "<br>");-->
+//bai 3
+    let string = prompt("Enter a string");
+    let resultString =[];
+    for (let i = 0; i < string.length; i++) {
+        if (string[i] == string[i].toLowerCase()) {
+            resultString.push(string[i].toUpperCase());
+        } else {
+            resultString.push(string[i].toLowerCase());
+        }
+    }
+    document.write(resultString.join(""));
+</body>
+</html>

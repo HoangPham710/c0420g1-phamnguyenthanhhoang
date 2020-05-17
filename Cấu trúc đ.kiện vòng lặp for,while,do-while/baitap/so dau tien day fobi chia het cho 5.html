@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>so dau tien day foni chia het cho 5</title>
+</head>
+<body>
+<script>
+    a1 = 0;
+    a2 = 1;
+    while (true) {
+        if (a1 % 5 == 0) {
+            break;
+        }
+        temp = a2;
+        a2 = a1 + a2;
+        a1 = temp;
+    }
+    document.write("So dau tien chia het cho 5 la: " + "<br>" + a1);
+</script>
+</body>
+</html>
