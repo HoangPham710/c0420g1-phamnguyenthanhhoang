@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap luyen tap 1</title>
+</head>
+<body>
+//bai 1
+<script>
+    let arr = [11,12,13,14,15,16,17,1,2,3];
+    let filterArr = arr.filter(check)
+   function check(value) {
+        return value > 10;
+   }
+   document.write(arr+"<br>");
+    document.write(filterArr + "<br>");
+    document.write("there are" + filterArr.length+"value greater than 10"+"<br>");
+</script>
+//bai 2
+<script>
+    /*let arr = [10, 12, 11, 5, 20, 5, 16, 0, 19, 17];
+    let max = arr[0];
+    let index = 0;
+    for(let i = 0; i < arr.length; i++) {
+        if (max < arr[i]) {
+            max = arr[i];
+            index = i;
+        }
+    }
+    document.write("max value is: " + max + " at " + index);*/
+</script>
+//bai 3
+<script>
+   /* let arr = [10, 12, 11, 5, 20, 5, 16, 0, 19, 17];
+    let max = arr[0];
+    let index = 0;
+    let average = 0;
+    sum = arr [0]
+    for(let i=1;i<arr.length;i++){
+        sum = sum + arr[i];
+        if(max<arr[i]){
+            max = arr[i];
+            index = i;
+        }
+    }
+    average = sum / arr.length;
+    document.write("max value is :" + max + "at" + index + "<br>");
+*/
+</script>
+// bai 4
+<!--<input type="text" id="element">
+<button onclick="addElement()">Add</button>
+<button onclick="reverseElement()">Reverse</button>
+<p id="arr1"></p>
+<p id="result"></p>-->
+<script>
+    /*let arr = [];
+    let num = document.getElementById('element');
+
+    function addElement(parameter) {
+        arr.push(num.value);
+        document.getElementById('arr1').innerHTML = arr;
+    }
+    function reverseElement() {
+        let _length = arr.length;
+        let temp;
+        for(let i = 0; i < _length / 2; i++) {
+            temp = arr[i];
+            arr[i] = arr[_length - 1 - i];
+            arr[_length - 1 - i] = temp;
+        }
+        document.getElementById('result').innerHTML = arr;
+
+    }*/
+</script>
+//bai 5
+<script>
+   /* let arr = [];
+    let num = document.getElementById('element');
+
+    function addElement(parameter) {
+        arr.push(num.value);
+        document.getElementById('arr1').innerHTML = arr;
+    }
+    function count() {
+        let temp = arr.filter(findNegNumber);
+        document.getElementById('result').innerHTML = "The number of negative number is " + temp.length;
+
+    }
+    function findNegNumber(value) {
+        return value < 0;
+    }*/
+</script>
+//bai 6
+<!--<input type="number" id="element">
+<button onclick="addElement()">Add</button>
+<button onclick="check()">Check</button>
+<p id="arr1"></p>
+<p id="result"></p>-->
+<script>
+    /*let arr = [];
+    let num = document.getElementById('element');
+    let numToFind;
+    function addElement(parameter) {
+        arr.push(num.value);
+        document.getElementById('arr1').innerHTML = arr;
+    }
+    function check() {
+        numToFind = parseInt(prompt("Input your number"));
+        let result = arr.some(findNumber);
+        if (result) {
+            document.getElementById('result').innerHTML = numToFind + " is in array";
+        } else {
+            document.getElementById('result').innerHTML = numToFind + " is not in array";
+        }
+
+    }
+    function findNumber(value) {
+        return value == numToFind;
+    }*/
+</script>
+//bai 7
+<!--<input type="number" id="element">
+<button onclick="addElement()">Add</button>
+<button onclick="check()">Check</button>
+<p id="arr1"></p>
+<p id="result"></p>
+<p id="result1"></p>-->
+<script>
+    /*let arr = [];
+    let num = document.getElementById('element');
+    let numToFind;
+    function addElement(parameter) {
+        arr.push(num.value);
+        document.getElementById('arr1').innerHTML = arr;
+    }
+    function check() {
+        numToFind = prompt("Input your number");
+        let foundId = arr.indexOf(numToFind);
+        if (foundId != -1) {
+            document.getElementById('result').innerHTML = numToFind + " is in array";
+            arr.splice(foundId, 1);
+            arr.push(0);
+            document.getElementById('result1').innerHTML = "new array: " + arr;
+        } else {
+            document.getElementById('result').innerHTML = numToFind + " is not in array";
+        }*/
+    }
+</script>
+//bai 8
+<!--<input type="number" id="element">
+<button onclick="addElement()">Add</button>
+<button onclick="sort()">Sort</button>
+<p id="arr1"></p>
+<p id="result"></p>-->
+<script>
+    /*let arr = [];
+    let num = document.getElementById('element');
+    let numToFind;
+    function addElement(parameter) {
+        arr.push(num.value);
+        document.getElementById('arr1').innerHTML = arr;
+    }
+    function sort() {
+        let _length = arr.length;
+        arr.sort(sortNumber);
+        document.getElementById('result').innerHTML = arr;
+    }
+    function sortNumber(a, b) {
+        return b - a;
+    }*/
+</script>
+//bai 9
+<!--<button onclick="merge()">Merge</button>
+<p id="arra"></p>
+<p id="arrb"></p>
+<p id="result"></p>-->
+<script>
+ /*   let arra = [10, 23, 11, 5, 1, 2, 16, 0, -14, 8];
+    let arrb = [1, 4, 15, 3, 9, 22, 0, -1, -5, -8];
+    let arrc = [];
+    let num = document.getElementById('element');
+    document.getElementById('arra').innerHTML = "Array A: " + arra;
+    document.getElementById('arrb').innerHTML = "Array B: " + arrb;
+    function merge() {
+        arrc = arra.concat(arrb);
+        document.getElementById('result').innerHTML ="Array C: " + arrc;
+    }*/
+</script>
+</body>
+</html>

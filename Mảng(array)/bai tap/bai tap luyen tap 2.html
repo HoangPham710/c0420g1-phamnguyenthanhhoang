@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyen tap 2</title>
+</head>
+<body>
+//bai 1
+<script>
+    let a = [
+        [1, 2, 1, 24],
+        [8, 11, 9, 4],
+        [7, 0, 7, 27],
+        [7, 4, 28, 14],
+        [3, 10, 26, 7]
+    ];
+    let temp = "";
+    for(let i = 0; i < 5; i++) {
+        temp += "\"Row" + i + "\"<br>";
+        for(let j = 0; j < 4 ; j++) {
+            temp += "\"" + a[i][j] + "\"<br>";
+        }
+    }
+    document.write(temp);
+</script>
+//bai 2
+<script>
+  /*  let arr = ['b', 'c', 'a', '1', '2', '3'];
+    document.write(arr.reverse());*/
+</script>
+//bai 3
+<script>
+   /* let arr = [];
+    let _length = parseInt(prompt("input array length"));
+    let element, temp;
+    let count = 0;
+    for(let i = 0; i < _length; i++) {
+        element = prompt("Element " + i);
+        temp = parseInt(element);
+        arr.push(element);
+        if (!isNaN(temp)) {
+            count += 1;
+        }
+    }
+    document.write("Your arraay: " + arr + "<br>");
+    document.write("There's " + count + " number character");*/
+</script>
+//bai 4
+<!--<label for="txt">Your string</label>
+<input type="text" id="txt">
+<button onclick="count()">Count</button><br>
+<p id="id"></p>-->
+<script>
+    /*let str = document.getElementById('txt');
+    function count() {
+        let wordSp = str.value.split(" ");
+        let filArr = wordSp.filter(function(value) { return value != ""});
+        document.getElementById('id').innerHTML ="The number of word is " + filArr.length;
+    }*/
+</script>
+//bai 5
+<!--<label for="txt">String 1</label>
+<input type="text" id="txt">
+<label for="txt">String 2</label>
+<input type="text" id="txt2">
+<button onclick="compare()">Compare</button><br>
+<p id="id"></p>-->
+<script>
+    /*let str = document.getElementById('txt');
+    let str2 = document.getElementById('txt2');
+    function compare() {
+        let wordSp = str.value.split(" ");
+        let wordSp2 = str2.value.split(" ");
+        let isSimilar = true;
+        // let filArr = wordSp.filter(function(value) { return value != ""});
+        if (wordSp.length == wordSp2.length) {
+            for(let i = 0; i < wordSp.length; i++) {
+                if (wordSp[i] != wordSp2[i]) {
+                    isSimilar = false;
+                    break;
+                }
+            }
+        } else {
+            isSimilar = false;
+        }
+        if (isSimilar) {
+            document.getElementById('id').innerHTML = "Two strings are the same";
+        } else {
+
+            document.getElementById('id').innerHTML = "Two strings are not the same";
+        }
+    }*/
+</script>
+//bai 6
+<script>
+/*let arr = [];
+let tempArr = [];
+let _length = parseInt(prompt("input array length"));
+let element, temp;
+let count = 0;
+for(let i = 0; i < _length; i++) {
+element = prompt("Element " + i);
+arr.push(element);
+if (element == '-') {
+tempArr.push('_');
+} else {
+tempArr.push(element);
+}
+}
+document.write("Your array: " + arr + "<br>");
+document.write("New Array: " + tempArr);*/
+</script>
+</body>
+</html>
