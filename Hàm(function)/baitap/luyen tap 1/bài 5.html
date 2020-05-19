@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 5</title>
+</head>
+<body>
+<script>
+    let ngoisao = ["Polaris", "Aldebaran","Deneb", "Vega", "Altair", "Dubhe","Regulus"];
+    let chomsao = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila","Ursa Major","Leo"];
+    let yourStar = prompt("Nhập ngôi sao của bạn");
+    let flag =false;
+    searchStar();
+    function searchStar() {
+        for (let i = 0; i < ngoisao.length; i++) {
+            if(yourStar==ngoisao[i]){
+                flag = true;
+                alert(chomsao[i])
+                break;
+            }
+        }
+    }
+    if(flag==false)
+        alert("No find star");
+</script>
+</body>
+</html>

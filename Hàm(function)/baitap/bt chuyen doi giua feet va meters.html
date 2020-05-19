@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyen doi giua feet va meters</title>
+</head>
+<body>
+<input type="number" id="feet" oninput="FeetTometer(this.value)">
+<br>
+<input type="number" id="meter" oninput="meterTofeet(this.value)">
+<script>
+    function FeetTometer(x) {
+      x = parseFloat(x);
+      document.getElementById("meter").value = x * 0.305;
+    }
+    function meterTofeet(x) {
+        x=parseFloat(x);
+        document.getElementById("feet").value = x * 3.279 ;
+    }
+</script>
+</body>
+</html>
