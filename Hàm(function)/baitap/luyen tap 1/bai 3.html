@@ -8,14 +8,15 @@
 <script>
     let a = parseInt(prompt("nhập số a vào"))
     let b = parseInt(prompt("nhập số b vào"))
-    result(a,b);
+    alert(result(a,b))
     function result(a,b) {
+        let kq=0;
         if(a>b){
-            alert(a +"&"+ b)
+            kq= (a +"&"+ b)
         }else{
-            alert (a + b)
+            kq= (a + b)
         }
-        return a , b
+        return kq;
     }
 </script>
 </body>
