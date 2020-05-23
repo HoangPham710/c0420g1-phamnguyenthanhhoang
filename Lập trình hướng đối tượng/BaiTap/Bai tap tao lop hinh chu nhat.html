@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xay dung lop hinh chu nhat</title>
+</head>
+<body>
+<canvas id="canvas"  style="border: 1px solid springgreen; display: none"></canvas> <!--none : không hiển thi-->
+<script>
+   class Rectangle {
+       constructor(cdai, crong) {
+           this.cdai = cdai;
+           this.crong = crong;
+           //thuộc tính
+       }
+
+       CV() {
+           return (this.cdai + this.crong) * 2;//Phương thức
+       }
+       DT() {
+           return this.cdai * this.crong;//phương thức
+       }
+       drawRec() {
+           let canvas = document.getElementById("canvas");
+           canvas.cdai = this.cdai;
+           canvas.crong = this.crong;
+           canvas.style.display = "block";
+           //drawRec: vẽ hinh chu nhat; block: hiển thị
+       }
+   }
+   let rec = new Rectangle (200,300);
+   rec.drawRec();//Lấy từ lớp khởi tạo
+</script>
+
+</body>
+</html>
