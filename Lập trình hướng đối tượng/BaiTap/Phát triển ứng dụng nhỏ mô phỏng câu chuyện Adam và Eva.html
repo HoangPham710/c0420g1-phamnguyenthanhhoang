@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phát triển ứng dụng nhỏ mô phỏng câu chuyện Adam và Eva</title>
+</head>
+<body>
+<script>
+    /*class Apple{
+        #weight =10;//Private field(#): chỉ truy cập trong phạm vi class,ngoài class không truy cập được.
+
+        decrease(){
+            this.#weight--;
+        }checkApple(){
+            return this.#weight;
+        }
+    };
+    class Human{
+        constructor(name,gender,weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+        }
+        say(st){
+            alert(st);
+        }
+        eatApple(apple){
+            if (apple.checkApple()>0){
+             apple.decrease();
+             this.weight ++;
+            }
+        }
+    }
+    let apple = new Apple();
+    let adam = new Human("Adam","Male",60);
+    let eva = new Human("Eva","Female",50);
+    adam.say("Đi ăn táo ko");
+    eva.say("đi");
+    adam.eatApple(apple);
+    alert("Adam ăn táo khối lượng quả táo còn :" + apple.checkApple());
+    eva.eatApple(apple);
+    alert("Eva ăn táo khối lượng quả táo còn :" + apple.checkApple());
+    alert("Khoi luong qua tao sau khi an: "+ apple.checkApple());*/
+</script>
+<script>
+    class Apple{
+      constructor(khoiluong) {
+          khoiluong = 10;
+          this.khoiluong = khoiluong;
+      }
+    };
+    class Human{
+        constructor(name,gender,weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight=weight;
+        }
+        say(st){
+            alert(st);
+        }
+        eatApple(apple){
+            if(apple.khoiluong>0){
+             apple.khoiluong --;
+             this.weight ++;
+            }
+        }
+        checkApple(apple){
+            alert("Check số táo còn lại:"+apple.khoiluong);
+        }
+    }
+    let apple = new Apple(10);
+    let adam = new Human("Adam","Male",60);
+    let eva = new Human ("Eva","Female",50);
+    alert(adam.name+" "+adam.gender+" "+adam.weight);
+    adam.say("Heloo Eva Ăn táo không");
+    alert(eva.name+" "+eva.gender+" "+eva.weight);
+    eva.say("Ăn");
+  adam.eatApple(apple);
+  alert("Số táo còn lại là :"+apple.khoiluong)
+    eva.eatApple(apple);
+  alert("Số táo còn lại là :" + apple.khoiluong);
+  adam.checkApple(apple);
+</script>
+</body>
+</html>

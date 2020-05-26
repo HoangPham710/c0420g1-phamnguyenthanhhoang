@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp mô phỏng sự hoạt động của đèn pin</title>
+</head>
+<body>
+<script>
+    class Battery{
+        constructor(energy) {
+            this.energy = energy;
+        }
+       decreaseEnergy(){
+            if(this.energy>0){
+                this.energy--;
+            }
+       }
+    };
+    class FlashLamp{
+        constructor(battery) {
+            this.battery = battery;
+        }
+        BatteryInfo() {
+            return this.battery;
+        }
+    };
+    battery = new Battery();
+    flashlamp = new FlashLamp(10);
+    alert(flashlamp.BatteryInfo());
+</script>
+</body>
+</html>

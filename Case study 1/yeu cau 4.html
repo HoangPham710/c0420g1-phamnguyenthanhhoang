@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrNameCustomer = [];
+    while(true) {//Vòng lặp vô hạn : đ/kiên luôn luôn đúng;
+    let choose = parseInt(prompt("1.Thêm mới Customers"+"\n"+"2.Xóa Customers"));
+        switch (choose) {
+            case 1 : {
+                let number = parseInt(prompt("nhập số customer mà bạn muốn vào mảng"));
+                for (let i = 0; i < number; i++) {
+                    let nameCustomer = prompt("nhập tên của customer: ");
+                    arrNameCustomer.push(nameCustomer);
+                }
+                let result = "";
+                arrNameCustomer.sort();//sắp xếp theo thứ tự alphabel;
+                for (let i = 0; i < arrNameCustomer.length; i++) {
+                    result +=(i+1)+ arrNameCustomer[i] + "\n";
+                }
+                alert(result);
+                break;
+            }
+            case 2 : {
+                let check = false;
+                let nameCustomer = prompt("Nhập customer mà bạn muốn xóa");
+                for (let i = 0; i < arrNameCustomer.length; i++) {
+                    if (arrNameCustomer[i] === nameCustomer) {
+                        arrNameCustomer.splice(i, 1)//splice: cắt phần tử;
+                        check = true;
+                    }
+                }
+                if (!check) {
+                    alert("Customer bạn muốn xóa không có trong mảng");
+                }
+                let result = "";
+                arrNameCustomer.sort();//sắp xếp theo thứ tự alphabel;
+                for (let i = 0; i < arrNameCustomer.length; i++) {
+                    result += (i+1)+arrNameCustomer[i]+ "\n";
+                }
+                alert(result);
+                break;
+            }
+            default: {
+                {
+                    alert("Failed");
+                }
+            }
+        }
+    }
+
+
+
+
+
+</script>
+</body>
+</html>
